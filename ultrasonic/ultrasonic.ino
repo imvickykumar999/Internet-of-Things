@@ -1,10 +1,25 @@
+
+
 int trigPin = 9;    //Trigger
 int echoPin = 12;    //Echo
+
 long duration, cm, inches;
- 
+
+bool check;
+
+bool condition(long dis){
+  if(dis < 30){
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+
 void setup() {
   //Serial Port begin
   Serial.begin (9600);
+ 
   //Define inputs and outputs
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
@@ -12,8 +27,7 @@ void setup() {
  
 void loop()
 {
- 
- 
+  
   // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
   // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
   digitalWrite(trigPin, LOW);
@@ -31,12 +45,15 @@ void loop()
   // convert the time into a distance
   cm = (duration/2) / 29.1;
   inches = (duration/2) / 74; 
+
+  check = condition(cm);
+  Serial.println(check);
   
-  Serial.print(inches);
-  Serial.print("in, ");
-  Serial.print(cm);
-  Serial.print("cm");
-  Serial.println();
+//  Serial.print(inches);
+//  Serial.print("in, ");
+//  Serial.print(cm);
+//  Serial.print("cm");
+//  Serial.println();
   
   delay(250);
 }
