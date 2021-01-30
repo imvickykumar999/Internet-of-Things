@@ -1,1 +1,3 @@
-[![ss]()]()
+# >>> Output...
+
+[![ss](https://github.com/imvickykumar999/Python-Arduino/blob/main/ir_sensor/ir_sensor.png?raw=true)](https://github.com/imvickykumar999/Python-Arduino/blob/main/ir_sensor/ir_sensor.ino)
