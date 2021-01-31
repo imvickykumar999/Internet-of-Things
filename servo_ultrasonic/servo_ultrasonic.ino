@@ -15,12 +15,16 @@ Servo Servo1;
 
 bool condition(long dis){
   if(dis < 30){
+      digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+
      // Make servo go to 0 degrees 
      Servo1.write(0); 
      delay(1000); 
      return true;
   }
   else{
+      digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+
      // Make servo go to 90 degrees 
      Servo1.write(90); 
      delay(1000); 
@@ -29,12 +33,14 @@ bool condition(long dis){
 }
 
 void setup() { 
-   // We need to attach the servo to the used pin number 
-   Servo1.attach(servoPin); 
+  // We need to attach the servo to the used pin number 
+  Servo1.attach(servoPin); 
 
+  pinMode(LED_BUILTIN, OUTPUT);
 
-   //Serial Port begin
+  //Serial Port begin
   Serial.begin (9600);
+  
   //Define inputs and outputs
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
