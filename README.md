@@ -3,7 +3,7 @@
 # Arduino implementation with python...
 
 ## >>> Setup
-[![setup](https://github.com/imvickykumar999/Ultrasonic-Sensor/blob/main/Blink/setup.jpg?raw=true)](https://github.com/imvickykumar999/Ultrasonic-Sensor/blob/main/Blink/Blink.py)
+[![setup](https://github.com/imvickykumar999/Python-Arduino/raw/main/servo_ultrasonic/output.jpg)](https://github.com/imvickykumar999/Ultrasonic-Sensor/blob/main/Blink/Blink.py)
 
 # Ultrasonic-Sensor
 Measuring Distance from 3 mm upto 250 cm
