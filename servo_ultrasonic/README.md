@@ -2,8 +2,8 @@
 
 ## >>> Ultrasonic Sensor for Car Detection,
 
-[![ss](Screenshot.png)](servo_ultrasonic.ino)
+[![ss](output.jpg)](servo_ultrasonic.ino)
 
 ## >>> Servo Motor for Moving Bar Vertically.
 
-[![output](output.jpg)](servo_ultrasonic.ino)
+[![output](Screenshot.png)](servo_ultrasonic.ino)
